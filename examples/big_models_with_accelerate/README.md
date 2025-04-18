@@ -4,7 +4,7 @@
 
 ## Overview
 
-[`accelerate`]((https://huggingface.co/docs/accelerate/en/index)) is a highly useful library in the Hugging Face ecosystem that supports for working with large models, including:
+[`accelerate`](https://huggingface.co/docs/accelerate/en/index) is a highly useful library in the Hugging Face ecosystem that supports for working with large models, including:
 - Offloading parameters to CPU
 - Sharding models across multiple GPUs with pipeline-parallelism
 

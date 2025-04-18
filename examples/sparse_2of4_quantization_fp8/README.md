@@ -113,7 +113,7 @@ tokenizer.save_pretrained(save_dir)
 
 After compression, the script validates the model by generating a sample output:
 
-```plaintext
+```text
 ========== SAMPLE GENERATION ============
 Hello my name is ...
 =========================================
