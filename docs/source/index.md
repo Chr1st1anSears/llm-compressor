@@ -128,25 +128,15 @@ output = model.generate("My name is")
 - If you have any questions or requests open an [issue](https://github.com/vllm-project/llm-compressor/issues) and we will add an example or documentation.
 - We appreciate contributions to the code, examples, integrations, and documentation as well as bug reports and feature requests! [Learn how here](./CONTRIBUTING.md).
 
-## Where to go next
+## Documentation
 
-Start with the Getting Started guide.
+% How to start using vLLM?
 
 :::{toctree}
 :caption: Getting Started
-:maxdepth: 2
+:maxdepth: 1
 
-getting_started/examples/big_models_with_accelerate.md
+getting_started/schemes.md
 getting_started/examples/examples_index.md
-getting_started/examples/finetuning.md
-getting_started/examples/multimodal_audio.md
-getting_started/examples/multimodal_vision.md
-getting_started/examples/quantization_2of4_sparse_w4a16.md
-getting_started/examples/quantization_kv_cache.md
-getting_started/examples/quantization_w4a16.md
-getting_started/examples/quantization_w8a8_fp8.md
-getting_started/examples/quantization_w8a8_int8.md
-getting_started/examples/quantizing_moe.md
-getting_started/examples/sparse_2of4_quantization_fp8.md
-getting_started/examples/trl_mixin.md
+
 :::
