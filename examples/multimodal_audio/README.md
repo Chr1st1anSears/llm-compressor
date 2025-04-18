@@ -29,7 +29,7 @@ model = AutoModelForCausalLM.from_pretrained(
 ```
 
 ## Customizing GPTQModifier Parameters ##
-The GPTQModifier is the modifier responsible for performing quantization of the model weights. For more information on quantizing with different weight schemes, see the `quantization_` examples in the [examples folder](/examples/).
+The GPTQModifier is the modifier responsible for performing quantization of the model weights. 
 
 ```python3
 recipe = [
@@ -51,13 +51,13 @@ Choosing sequential targets with higher granularity (for example "Linear" instea
 If your model is not traceable for your desired dataset, first consider adding any problematic modules to the ignore list. Doing this prevents the model tracer from tracing the internals of those modules, thereby avoid the untraceable operations.
 
 ## Tracing Errors ##
-Because the architectures of audio-language models is often times more complex than those of typical decoder-only text models, you may encounter `torch.fx.TraceError`s when attempting to quantize your model. For more information on `torch.fx.TraceError`s, why they occur, and how to resolve them, please see the [Model Tracing Guide](/src/llmcompressor/transformers/tracing/GUIDE.md).
+Because the architectures of audio-language models is often times more complex than those of typical decoder-only text models, you may encounter `torch.fx.TraceError`s when attempting to quantize your model. For more information on `torch.fx.TraceError`s, why they occur, and how to resolve them, please see the [Model Tracing Guide](../../src/llmcompressor/transformers/tracing/GUIDE.md).
 
 ## Adding Your Own Smoothquant Mappings ##
-For a guide on adding smoothquant mappings for your dataset, see the [SmoothQuant Guide](/src/llmcompressor/modifiers/smoothquant/README.md).
+For a guide on adding smoothquant mappings for your dataset, see the [SmoothQuant Guide](../../src/llmcompressor/modifiers/smoothquant/README.md).
 
 ## Adding Your Own Data Collator ##
-Most examples utilize a generic `data_collator` which correctly correlates data for most multimodal datasets. If you find that your model needs custom data collation (as is the case with [pixtral](/examples/multimodal_vision/pixtral_example.py)), you can modify this function to reflect these model-specific requirements.
+Most examples utilize a generic `data_collator` which correctly correlates data for most multimodal datasets. If you find that your model needs custom data collation (as is the case with [pixtral](../multimodal_vision/pixtral_example.py)), you can modify this function to reflect these model-specific requirements.
 
 ## Sample Audio Provided Under a Creative Commons Attribution License ##
 https://creativecommons.org/licenses/by/4.0/legalcode
