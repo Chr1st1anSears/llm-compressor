@@ -1,6 +1,6 @@
-Source <gh-file:examples/multimodal_audio>.
+Source <gh-file:docs/source/raw_examples/multimodal_audio>.
 
-:::{include} ../../../../examples/multimodal_audio/README.md
+:::{include} ../../../../docs/source/raw_examples/multimodal_audio/README.md
 :::
 
 ## Example materials
@@ -8,7 +8,7 @@ Source <gh-file:examples/multimodal_audio>.
 :::{admonition} whisper_example.py
 :class: dropdown
 
-:::{literalinclude} ../../../../examples/multimodal_audio/whisper_example.py
+:::{literalinclude} ../../../../docs/source/raw_examples/multimodal_audio/whisper_example.py
 :::
 :::
 
