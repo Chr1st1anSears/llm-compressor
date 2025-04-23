@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent.parent.parent.resolve()
 ROOT_DIR_RELATIVE = '../../../..'
-EXAMPLE_DIR = ROOT_DIR / "examples"
+EXAMPLE_DIR = ROOT_DIR / "docs/source/raw_examples"
 EXAMPLE_DOC_DIR = ROOT_DIR / "docs/source/getting_started/examples"
 
 
@@ -63,7 +63,7 @@ class Index:
     def generate(self) -> str:
         content = f"# {self.title}\n\n{self.description}\n\n"
         content += ":::{toctree}\n"
-        content += f":caption: {self.caption}\n:maxdepth: {self.maxdepth}\n"
+        content += f":caption: {self.caption}\n:maxdepth: 1\n" # Original {self.maxdepth}\n"
         content += "\n".join(self.documents) + "\n:::\n"
         return content
 
